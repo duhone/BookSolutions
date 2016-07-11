@@ -1,0 +1,56 @@
+\documentclass[12pt,letterpaper]{amsart} 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\title{1.5}
+\setcounter{secnumdepth}{1}
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+\newenvironment{problem}[2][Problem]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+\newenvironment{question}[2][Question]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist} \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries#2.}]}{\end{trivlist}} 
+
+\begin{document} 
+\maketitle
+
+\section*{a}
+\begin{align*}
+Instructions\;per\;second\;P1 = \frac{3x10^9}{1.5} = 2000MIPS\\
+Instructions\;per\;second\;P2 = \frac{2.5x10^9}{1.0} = 2500MIPS\\
+Instructions\;per\;second\;P3 = \frac{4x10^9}{2.2} ~= 1818MIPS\\
+P2\;has\;the\;highest\;instructions\;per\;second
+\end{align*}
+
+\section*{b}
+\begin{align*}
+P1\;cycles = 30\;billion\qquad instructions = 20\;billion\\
+P2\;cycles = 25\;billion\qquad instructions = 25\;billion\\
+P3\;cycles = 40\;billion\qquad instructions = 18.1\;billion
+\end{align*}
+
+\section*{c}
+\subsection{P1}
+\begin{align*}
+CPI = 1.5+1.5*.2 = 1.8\\
+Need\;MIPS = 2000+2000*.3=2600\\
+\frac{clock}{1.8}=2600x10^6\\
+clock=4.68Ghz
+\end{align*}
+\subsection{P2}
+\begin{align*}
+CPI = 1.0+1.0*.2 = 1.2\\
+Need\;MIPS = 2500+2500*.3=3250\\
+\frac{clock}{1.2}=3250x10^6\\
+clock=3.9Ghz
+\end{align*}
+\subsection{P3}
+\begin{align*}
+CPI = 2.2+2.2*.2 = 2.6\\
+Need\;MIPS = 1818+1818*.3=2363\\
+\frac{clock}{2.6}=2363x10^6\\
+clock=6.14Ghz
+\end{align*}
+
+\end{document}
